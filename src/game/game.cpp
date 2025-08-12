@@ -8,4 +8,5 @@ Game::Game() {
 
 void Game::run() const {
     window_->create(1280, 720, "Ejc of linux");
+    window_->show();
 }
