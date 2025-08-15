@@ -12,7 +12,6 @@ std::unique_ptr<graphics::window::Window> graphics::window::create() {
 #elif __APPLE__
 #elif __linux__
     return std::make_unique<X11Window>();
-#else
-    return nullptr;
 #endif
+    return nullptr;
 }
