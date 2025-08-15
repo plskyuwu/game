@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 4.0)
 
-project(game)
+project(game CXX C OBJC OBJCXX)
 
 set(CMAKE_CXX_STANDARD 23)
 
@@ -11,7 +11,14 @@ set(SOURCES
         src/graphics/window/window.cpp
         src/graphics/window/window.h
         src/game/game.cpp
-        src/game/game.h)
+        src/game/game.h
+        src/utilities/logger/log_handler.cpp
+        src/utilities/logger/log_handler.h
+        src/utilities/logger/log_level.h
+        src/utilities/logger/terminal_log_handler.cpp
+        src/utilities/logger/terminal_log_handler.h
+        src/utilities/logger/log_message.cpp
+        src/utilities/logger/log_message.h)
 
 find_package(OpenGL REQUIRED)
 
