@@ -16,6 +16,8 @@ namespace graphics::window {
 
         virtual void create(u_int32_t width, u_int32_t height, std::string title) = 0;
 
+        virtual void swap_gl_buffer() = 0;
+
         virtual void show() = 0;
 
         virtual void destroy() = 0;
