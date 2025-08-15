@@ -70,6 +70,10 @@ namespace graphics::window {
             display_, visual_info, nullptr, GL_TRUE);
     }
 
+    void X11Window::swap_gl_buffer() {
+        glXSwapBuffers(display_, window_);
+    }
+
     void X11Window::show() {
         XMapWindow(display_, window_);
 
@@ -100,7 +104,7 @@ namespace graphics::window {
             glColor3f(0.0, 0.0, 0.0);
             glVertex2f(0.5, 0.5);
             glEnd();
-            glXSwapBuffers(display_, window_);
+            swap_gl_buffer();
         }
     }
 

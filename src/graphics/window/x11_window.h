@@ -16,6 +16,8 @@ namespace graphics::window {
 
         void create(u_int32_t width, u_int32_t height, std::string title) override;
 
+        void swap_gl_buffer() override;
+
         void show() override;
 
         void destroy() override;
