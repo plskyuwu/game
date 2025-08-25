@@ -4,6 +4,7 @@
 #include "log_level.h"
 
 namespace utilities::logger {
+    // TODO: Add occurrence
     class LogMessage {
     public:
         LogMessage(LogLevel log_level, std::string message);

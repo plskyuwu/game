@@ -7,6 +7,7 @@
 #include "terminal_log_handler.h"
 
 namespace utilities::logger {
+    // TODO: Maybe create a macro for utilities::logger:global_logger->log() or a better solution altogether
     class Logger {
     public:
         Logger();
